@@ -2,8 +2,9 @@
 .card {
     position: relative;
     width: 15%;
+    float: left;
     height: 60%;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0px 2px 4px rgba(0, 0, 0, 0.2);
     background-color: white;
     margin: 2%;
 }
