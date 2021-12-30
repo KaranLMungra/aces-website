@@ -1,0 +1,22 @@
+{
+    "name": "aces-website",
+    "version": "1.0.0",
+    "description": "Made for ACES Website Hackathon",
+    "main": "index.js",
+    "scripts": {
+        "start": "http-server -o"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KaranLMungra/aces-website.git"
+    },
+    "author": "Karan Mungra, Sagar Lakhnotra",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/KaranLMungra/aces-website/issues"
+    },
+    "homepage": "https://github.com/KaranLMungra/aces-website#readme",
+    "devDependencies": {
+        "http-server": "^14.0.0"
+    }
+}
