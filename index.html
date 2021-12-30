@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACES - ASSOCIATION OF COMPUTER ENGINEERS SOCIETY</title>
+</head>
+
+<body ng-app="acesWeb">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="stylesheet" href="/style/button.css" />
+    <link rel="stylesheet" href="/style/index.css" />
+    <link rel="stylesheet" href="/style/navbar.css" />
+    <div class="container">
+        <div class="navbar-container navbar-animation">
+            <div class="navbar">
+                <button class="ban"><a href="#/!" class="btn-title">Home</a></button>
+                <button class="ban"><a href="#!aboutus" class="btn-title">About Us</a></button>
+                <button class="ban"><a href="#!team" class="btn-title">Team</a></button>
+                <button class="ban"><a href="#!events" class="btn-title">Events</a></button>
+                <button class="ban"><a href="#!contact" class="btn-title">Contact</a></button>
+            </div>
+        </div>
+        <div class="main-container" ng-view></div>
+    </div>
+
+    <script>
+        var app = angular.module("acesWeb", ["ngRoute"]);
+        app.config(function($routeProvider) {
+            $routeProvider
+                .when("/", {
+                    templateUrl: "/pages/main.htm",
+                })
+                .when("/events", {
+                    templateUrl: "/pages/events.htm"
+                })
+                .when("/aboutus", {
+                    templateUrl: "/pages/about-us.htm"
+                })
+                .when("/team", {
+                    templateUrl: "/pages/team.htm"
+                })
+                .when("/contact", {
+                    templateUrl: "/pages/contact.htm"
+                });
+        });
+    </script>
+</body>
+
+</html>
